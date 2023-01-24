@@ -1,0 +1,3 @@
+I am trying to really understand Node, Express and Mongo more deeply, because my more complex projects start becoming unmanageable as I don't understand where the information and commands are coming from. I thought I would try building a project (or several) each day, until I start understanding what's happening.
+
+I've found this tutorial (https://www.youtube.com/playlist?list=PLpc_YvcwbxaRl8WOTamrAD78jnsuNqM1C) and am finding that I am building so many small projects, that I don't really care if I break them and can just build another. I think this rapid repetition and exploration of the different commands associated with Node vs express vs all the modules is really starting to sink in. 
