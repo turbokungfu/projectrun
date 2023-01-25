@@ -1,0 +1,3 @@
+I didn't spend a lot of time, but I did build a basic express app and he didn't go to deep into ejs vs handlebars, but I did not know the difference between 2 and 3 curly braces from previous work. HBS would take a little extra learning in syntax for me, but typing out curly braces is easier for me than brackets and percent signs.
+
+I'll do a lot tomorrow for my day off. Tomorrow I will complete Node essentials and decide my templating engine and stack. I think I want to do the sveltekit tutorial on Friday. If I can do Mongo, express, svelte and Node, I might be gtg.
