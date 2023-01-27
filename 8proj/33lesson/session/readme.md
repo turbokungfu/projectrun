@@ -1,0 +1,4 @@
+This simple lesson explains express-sessions. For this, in your 'app.js' file (or whatever you call it (server or index)) you need to require it, or import it and then use the 'app.use' expression and set your secret and whether or not you save it from session to session, etc. 
+
+Then you can use it in your get app to pull data (in this case) from the request body and run some code and then rerender. If you use the session data, the info won't flow to another browser user. I did find that two browsers of the same brand would update it.
+https://www.youtube.com/watch?v=hKYjSgyCd60&list=PLpc_YvcwbxaRl8WOTamrAD78jnsuNqM1C&index=33
