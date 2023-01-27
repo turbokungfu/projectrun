@@ -6,12 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/ejs', (req, res, next)=> {
-  res.render('ejs-example', {
-    title: '<h1> Example of ejs template</h1>',
-    showTitle: true,
-    data: ['apples', 'oranges', 'pears', 'kiwi']
-  })
-})
+router.get('/hello', function(req, res, next) {
+  res.render('hello', { title: 'hello' });
+});
+
+router.get('/add-post', function(req, res, next) {
+  res.render('add-post', { title: 'hello' });
+});
 
 module.exports = router;
