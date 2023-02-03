@@ -1,10 +1,12 @@
 const express= require('express');
 const mongoose= require('mongoose');
-const dotenv = require('dotenv')
+require("dotenv").config({ path: "./.env" });
 const app=express();
 
 const url= process.env.URL;
-mongoose.connect(url,{useNewUrlParser: true});
+mongoose.set('strictQuery', false);
+mongoose.connect(url,
+    {useNewUrlParser: true});
 const con= mongoose.connection;
 app.use(express.json());
 try{
@@ -15,6 +17,9 @@ try{
 {
     console.log("Error: "+error);
 }
+
+const studentrouter= require("./routes/students");
+app.use('/students',studentrouter)
 
 const port=9000;
 app.listen(port, () =>{
