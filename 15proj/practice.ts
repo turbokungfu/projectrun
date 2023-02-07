@@ -11,3 +11,13 @@ export function simpleMultiplication(num: number): number{
 
   //I'm going to try and make a deno and fresh framework now.
 
+  //TS seems really similar to JS at the 8 kyu level
+
+  export function mango(q: number, p: number): number{
+    const free = Math.floor(q/3)
+    return (p*q)-(p*free)
+  }
+
+  //VScode let me know that 'free' is never reassigned and to use 'const'. cool.
+  
+
