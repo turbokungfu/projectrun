@@ -27,3 +27,40 @@ export function trim (str: string, size: number): string {
   else if(str.length <= 3 && str.length>size){return `${str.slice(0,size)}...`}
   else {return  `${str}`}
 }
+
+
+//I'm dead in the water on this 7kyu
+
+export function maxRot(n:number):number {
+ const ans = []
+ 
+ let arr= n.toString().split('')
+for(let i=0; i<arr.length; i++){
+arr = arr.slice(0,i), arr.slice(i+1,arr.length), arr.slice(i, i)
+console.log(arr)
+
+}
+  return n
+ 
+}
+
+//I will come back tomorrow and study. I couldn't assign an array of strings to a string:
+
+export class G964 {
+    public static maxRot(n) {
+      
+      let arrResult = [];
+      arrResult.push(n);
+      
+      let arrNum = n.toString().split('');
+      let i = 0;
+      while(arrNum.length >= i){
+        arrNum.push(...arrNum.splice(i, 1));
+        
+        arrResult.push(arrNum.join(''));
+        i++;
+      }
+      
+      return arrResult.sort().pop();
+    }
+}
