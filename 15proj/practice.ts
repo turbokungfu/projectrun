@@ -20,4 +20,10 @@ export function simpleMultiplication(num: number): number{
 
   //VScode let me know that 'free' is never reassigned and to use 'const'. cool.
   
-
+export function trim (str: string, size: number): string {
+  if (str.length > 3 && size >3 && str.length > size){return `${str.slice(0,size-3)}...`}
+  else if (str.length > 3 && size <= 3 && str.length > size){return `${str.slice(0,size)}...`}
+  else if(str.length > 3 && str.length < size){return `${str.slice(0,size)}`}
+  else if(str.length <= 3 && str.length>size){return `${str.slice(0,size)}...`}
+  else {return  `${str}`}
+}
