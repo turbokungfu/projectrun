@@ -1,5 +1,5 @@
 import {MongoClient} from 'mongodb';
-import { VITE_MONGO_URL } from '../db/'
+import { env } from '../db/.env'
 
 const client = new MongoClient(VITE_MONGO_URL)
 
