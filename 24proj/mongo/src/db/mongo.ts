@@ -1,7 +1,7 @@
 import {MongoClient} from 'mongodb';
-import { env } from '../db/.env'
+import { MONGO_URL } from '$env/static/private'; 
 
-const client = new MongoClient(VITE_MONGO_URL)
+const client = new MongoClient(MONGO_URL)
 
 export function start_mongo() {
 	console.log('Starting mongo...');
